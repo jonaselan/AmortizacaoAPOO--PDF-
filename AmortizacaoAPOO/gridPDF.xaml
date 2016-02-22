@@ -1,0 +1,10 @@
+﻿<Window x:Class="AmortizacaoAPOO.gridPDF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="gridPDF" Height="300" Width="300">
+    <Grid>
+        <Button Content="Exportar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="205,234,0,0" Name="ExportarTxt" Click="txtExportar_Click" />
+        <DataGrid HorizontalAlignment="Left" VerticalAlignment="Top" Height="207" Width="264" Margin="15,10,0,0" Name="dgValues"/>
+       
+    </Grid>
+</Window>

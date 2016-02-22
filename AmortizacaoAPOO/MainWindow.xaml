@@ -1,0 +1,23 @@
+﻿<Window x:Class="AmortizacaoAPOO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="207.536" Width="236.409"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Label Content="Montante:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,11,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,14,0,0" Name="txtSum" />
+        <Label Content="Juros (Anual):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,39,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,42,0,0" Name="txtInterest"/>
+        <Label Content="Parcelas:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,67,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,70,0,0" Name="txtParcelas" />
+
+        <Label Content="Tipo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,96,0,0"/>
+        <Button Content="Montar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="135,143,0,0" Name="CreateTxt" Click="CreateTxt_Click" />
+        <ComboBox Name="cbType" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="89,100,0,0">
+            <ListBoxItem Content="SAC"/>
+            <ListBoxItem Content="Price"/>
+            <ListBoxItem Content="Americano"/>
+        </ComboBox>
+    </Grid>
+</Window>
