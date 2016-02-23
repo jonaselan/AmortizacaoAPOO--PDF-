@@ -28,7 +28,7 @@ namespace AmortizacaoAPOO
 
         private void CreateTxt_Click(object sender, RoutedEventArgs e)
         {
-            gridPDF grid = new gridPDF(Convert.ToInt32(txtSum.Text), Convert.ToInt32(txtInterest.Text), Convert.ToInt32(txtParcelas.Text), cbType.SelectedIndex);
+            gridPDF grid = new gridPDF(Convert.ToDouble(txtSum.Text), Convert.ToDouble(txtInterest.Text)/100, Convert.ToInt32(txtParcelas.Text), cbType.SelectedIndex);
             grid.Show();
         }                 
     }
