@@ -13,13 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace AmortizacaoAPOO
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow 
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
@@ -28,8 +27,9 @@ namespace AmortizacaoAPOO
 
         private void CreateTxt_Click(object sender, RoutedEventArgs e)
         {
-            gridPDF grid = new gridPDF(Convert.ToDouble(txtSum.Text), Convert.ToDouble(txtInterest.Text)/100, Convert.ToInt32(txtParcelas.Text), cbType.SelectedIndex);
+            gridPDF grid = new gridPDF(Convert.ToDouble(txtSum.Text), Convert.ToDouble(txtInterest.Text) / 100, Convert.ToInt32(txtParcelas.Text), cbType.SelectedIndex);
             grid.Show();
-        }                 
+        }
+
     }
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmortizacaoAPOO", "AmortizacaoAPOO\AmortizacaoAPOO.csproj", "{AE31388B-395F-46FE-8D93-AF508CB16D2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmortizacaoAPOO", "AmortizacaoAPOO\AmortizacaoAPOO.csproj", "{D97D28A3-43B7-4280-9248-070CA2CCE011}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE31388B-395F-46FE-8D93-AF508CB16D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE31388B-395F-46FE-8D93-AF508CB16D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE31388B-395F-46FE-8D93-AF508CB16D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE31388B-395F-46FE-8D93-AF508CB16D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97D28A3-43B7-4280-9248-070CA2CCE011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97D28A3-43B7-4280-9248-070CA2CCE011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97D28A3-43B7-4280-9248-070CA2CCE011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97D28A3-43B7-4280-9248-070CA2CCE011}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

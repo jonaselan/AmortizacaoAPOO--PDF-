@@ -1,0 +1,16 @@
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\bin\Debug\AmortizacaoAPOO.exe.config
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\bin\Debug\AmortizacaoAPOO.exe
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\bin\Debug\AmortizacaoAPOO.pdb
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\bin\Debug\sharpPDF-SL.dll
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.csprojResolveAssemblyReference.cache
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\gridPDF.baml
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\MainWindow.baml
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\gridPDF.g.cs
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\MainWindow.g.cs
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\App.g.cs
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO_MarkupCompile.cache
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.g.resources
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.Properties.Resources.resources
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.csproj.GenerateResource.Cache
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.exe
+C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.pdb

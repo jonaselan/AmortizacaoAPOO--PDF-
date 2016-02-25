@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SharpPDF</id>
+    <version>1.1.0</version>
+    <title>SharpPDF</title>
+    <authors>Roberto Mazzotta</authors>
+    <owners>Roberto Mazzotta</owners>
+    <iconUrl>http://i57.tinypic.com/10gycz7.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SharpPDF Tools for creating PDFs with Silverlight.</description>
+    <copyright>Copyright © 2014 Base-Net Informatik AG</copyright>
+  </metadata>
+</package>
