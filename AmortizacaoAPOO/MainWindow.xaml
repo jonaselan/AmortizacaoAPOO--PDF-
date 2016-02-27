@@ -6,15 +6,15 @@
         >
     <Grid>
         <Label Content="Montante:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,11,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,14,0,0" Name="txtSum" />
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,14,0,0" Name="txtMontante" />
         <Label Content="Juros (%):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,39,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,42,0,0" Name="txtInterest"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,42,0,0" Name="txtJuros"/>
         <Label Content="Parcelas:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,67,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,70,0,0" Name="txtParcelas" />
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,70,0,0" Name="txtNParcelas" />
 
         <Label Content="Tipo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,96,0,0"/>
         <Button Content="Gerar tabela" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="135,143,0,0" Name="CreateTxt" Click="CreateTxt_Click" />
-        <ComboBox Name="cbType" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="89,100,0,0">
+        <ComboBox Name="cbTipo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="89,100,0,0">
             <ListBoxItem Content="SAC"/>
             <ListBoxItem Content="Price"/>
             <ListBoxItem Content="Americano"/>

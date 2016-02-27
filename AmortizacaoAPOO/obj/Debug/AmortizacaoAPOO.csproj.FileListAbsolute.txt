@@ -14,3 +14,21 @@ C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\Amortizaca
 C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.csproj.GenerateResource.Cache
 C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.exe
 C:\Users\Jonas Elan\Desktop\AmortizacaoAPOO\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.pdb
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\bin\Debug\AmortizacaoAPOO.exe.config
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.exe
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.pdb
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\bin\Debug\AmortizacaoAPOO.exe
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\bin\Debug\AmortizacaoAPOO.pdb
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\bin\Debug\sharpPDF-SL.dll
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\gridPDF.baml
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\MainWindow.baml
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\gridPDF.g.cs
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\MainWindow.g.cs
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\App.g.cs
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO_MarkupCompile.cache
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.g.resources
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.Properties.Resources.resources
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\obj\Debug\AmortizacaoAPOO.csproj.GenerateResource.Cache
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\bin\Debug\itextsharp.dll
+C:\Users\Jonathan\Source\Repos\AmortizacaoAPOO--PDF-\AmortizacaoAPOO\bin\Debug\itextsharp.xml

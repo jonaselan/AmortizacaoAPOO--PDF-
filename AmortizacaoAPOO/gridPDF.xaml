@@ -5,7 +5,7 @@
         Title="gridPDF" Height="392.557" Width="470.464">
     <Grid>
         <Button Content="Exportar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="378,332,0,0" Name="ExportarTxt" Click="txtExportar_Click" />
-        <DataGrid HorizontalAlignment="Left" VerticalAlignment="Top" Height="317" Width="437" Margin="15,10,0,0" Name="dgValues"/>
+        <DataGrid HorizontalAlignment="Left" VerticalAlignment="Top" Height="317" Width="442" Margin="10,10,0,0" Name="dgValues"/>
 
     </Grid>
 </Window>

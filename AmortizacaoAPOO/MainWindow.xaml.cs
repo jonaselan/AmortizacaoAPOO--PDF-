@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AmortizacaoAPOO.Models;
+using AmortizacaoAPOO.Logic;
+using AmortizacaoAPOO.Interfaces;
 
 namespace AmortizacaoAPOO
 {
@@ -27,7 +30,30 @@ namespace AmortizacaoAPOO
 
         private void CreateTxt_Click(object sender, RoutedEventArgs e)
         {
-            gridPDF grid = new gridPDF(Convert.ToDouble(txtSum.Text), Convert.ToDouble(txtInterest.Text) / 100, Convert.ToInt32(txtParcelas.Text), cbType.SelectedIndex);
+            Divida divida = new Divida(double.Parse(txtMontante.Text), double.Parse(txtJuros.Text), int.Parse(txtNParcelas.Text));
+            IAmortizacao amortizacao = null;
+            Models.AmortizacaoPDF pdf = null;
+
+            switch (cbTipo.SelectedIndex)
+            {
+                case 0:
+                    amortizacao = new SAC();
+                    pdf = new Models.AmortizacaoPDF(typeof(SAC));
+                    break;
+                case 1:
+                    amortizacao = new Price();
+                    pdf = new Models.AmortizacaoPDF(typeof(Price));
+                    break;
+                case 2:
+                    amortizacao = new Americano();
+                    pdf = new Models.AmortizacaoPDF(typeof(Americano));
+                    break;
+            }
+
+            divida = amortizacao.Calcular(divida);
+            pdf.Source = divida;
+
+            gridPDF grid = new gridPDF(pdf);
             grid.Show();
         }
 
