@@ -8,7 +8,7 @@ using AmortizacaoAPOO.Models;
 
 namespace AmortizacaoAPOO.Logic
 {
-    class SAC : IAmortizacao
+    public class SAC : IAmortizacao
     {
         public Divida Calcular(Divida d)
         {

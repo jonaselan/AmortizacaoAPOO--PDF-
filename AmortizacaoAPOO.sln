@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmortizacaoAPOO", "AmortizacaoAPOO\AmortizacaoAPOO.csproj", "{D97D28A3-43B7-4280-9248-070CA2CCE011}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestAmortizacao", "UnitTestAmortizacao\UnitTestAmortizacao.csproj", "{666C7407-83C1-48C8-9A89-B8BF784041E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D97D28A3-43B7-4280-9248-070CA2CCE011}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D97D28A3-43B7-4280-9248-070CA2CCE011}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D97D28A3-43B7-4280-9248-070CA2CCE011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{666C7407-83C1-48C8-9A89-B8BF784041E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{666C7407-83C1-48C8-9A89-B8BF784041E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{666C7407-83C1-48C8-9A89-B8BF784041E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{666C7407-83C1-48C8-9A89-B8BF784041E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D15249DA-BE3D-4BAA-A65A-797096D8CABF}</ProjectGuid>
+    <ProjectGuid>{666C7407-83C1-48C8-9A89-B8BF784041E0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTestAmortizacao</RootNamespace>
@@ -45,13 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AmericanoTests.cs" />
+    <Compile Include="DividaTests.cs" />
+    <Compile Include="PriceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SACTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AmortizacaoAPOO\AmortizacaoAPOO.csproj">

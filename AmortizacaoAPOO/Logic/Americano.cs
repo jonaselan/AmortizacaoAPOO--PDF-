@@ -8,7 +8,7 @@ using AmortizacaoAPOO.Interfaces;
 
 namespace AmortizacaoAPOO.Logic
 {
-    class Americano : IAmortizacao
+    public class Americano : IAmortizacao
     {
         public Divida Calcular(Divida d)
         {
