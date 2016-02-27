@@ -17,6 +17,7 @@ using System.Windows.Shapes;
 ﻿using sharpPDF;
 using sharpPDF.Enumerators;
 using System.Data;
+using Microsoft.Win32;
 
 namespace AmortizacaoAPOO
 {
@@ -40,7 +41,7 @@ namespace AmortizacaoAPOO
             InitializeComponent();
 
             myFirstPage = myDoc.addPage();
-            myFirstPage.addText("tabela", 100, 660, predefinedFont.csHelveticaOblique, 30, new pdfColor(predefinedColor.csCyan));
+            myFirstPage.addText("TABELA AMORTIZAÇÃO", 100, 660, predefinedFont.csHelveticaOblique, 30, new pdfColor(predefinedColor.csCyan));
 
             //Set table's border
             //myTable.borderSize = 1;
@@ -55,7 +56,6 @@ namespace AmortizacaoAPOO
 
             /*Create table's rows*/
             pdfTableRow myRow;
-
 
             List<Values> users = new List<Values>();
             double jurosDaVez, prestacaoDaVez, amortizacao, amortizacaoDaVez = 0, montanteDaVez = 0;
@@ -74,13 +74,11 @@ namespace AmortizacaoAPOO
             switch (t)
             {
                 case 0: // SAC     
-                    // tipoAmortizacao = "Amortização SAC";
                     amortizacao = 0;
                     amortizacao = m / p;
 
                     for (int i = 1; i < p + 1; i++)
                     {
-
                         m -= amortizacao;
                         jurosDaVez = (p - i + 1) * j * amortizacao;
                         prestacaoDaVez = jurosDaVez + amortizacao;
@@ -127,7 +125,6 @@ namespace AmortizacaoAPOO
                     break;
 
                 case 1: // Price
-                    // tipoAmortizacao = "Amortização PRICE";
                     montanteDaVez = m;
                     prestacaoDaVez = m * ((Math.Pow((1 + j), p) * j) /
                                           (Math.Pow((1 + j), p) - 1));
@@ -161,7 +158,6 @@ namespace AmortizacaoAPOO
                     break;
 
                 case 2: // Americano     
-                    // tipoAmortizacao = "Amortização AMERICANO";
                     jurosDaVez = j * m;
 
                     for (int i = 1; i < p; i++)
@@ -252,11 +248,16 @@ namespace AmortizacaoAPOO
                 /*Set Cellpadding*/
                 // myTable.cellpadding = 20;
 
-                /*Put the table on the page object*/
-                myFirstPage.addTable(myTable, 100, 600);
-                myTable = null;
-                myDoc.createPDF("C:\\Users\\Public\\teste.pdf");
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.FileName = "tabelaAmortizacao"; // Default file name
+                sfd.DefaultExt = ".pdf"; // Default file extension
 
+                if (sfd.ShowDialog() == true)
+                {
+                    myFirstPage.addTable(myTable, 100, 600);
+                    myTable = null;
+                    myDoc.createPDF(sfd.FileName);
+                }
             }
             catch (Exception)
             {
