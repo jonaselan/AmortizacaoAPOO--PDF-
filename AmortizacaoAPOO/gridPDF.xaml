@@ -15,15 +15,32 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <DataGrid SelectionMode="Single" CanUserResizeColumns="False" AllowDrop="False" ScrollViewer.CanContentScroll="False" HorizontalScrollBarVisibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="539" Margin="10,10,0,0" DataContext="{StaticResource ItemCollectionViewSource}" ItemsSource="{Binding}" CanUserAddRows="False" AutoGenerateColumns="False"  Name="dgValues">
+            <DataGrid IsReadOnly="True" SelectionMode="Single" CanUserResizeColumns="False" AllowDrop="False" ScrollViewer.CanContentScroll="False" HorizontalScrollBarVisibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="539" Margin="10,10,0,0" DataContext="{StaticResource ItemCollectionViewSource}" ItemsSource="{Binding}" CanUserAddRows="False" AutoGenerateColumns="False"  Name="dgValues">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Width="51" Binding="{Binding Path=Periodo}" Header="Período" FontWeight="Bold"/>
-                    <DataGridTextColumn Width="120" Binding="{Binding Path=Prestacao, StringFormat=C2, ConverterCulture=pt-BR}" Header="Prestação"/>
-                    <DataGridTextColumn Width="120" Binding="{Binding Path=Juros, StringFormat=C2, ConverterCulture=pt-BR}" Header="Juros"/>
-                    <DataGridTextColumn Width="120" Binding="{Binding Path=Amortizacao, StringFormat=C2, ConverterCulture=pt-BR}" Header="Amortização"/>
-                    <DataGridTextColumn Width="120" Binding="{Binding Path=SaldoDevedor, StringFormat=C2, ConverterCulture=pt-BR}" Header="Saldo Devedor"/>
+                    <DataGridTextColumn x:Name="ColumnPeriodo" Width="51" Binding="{Binding Path=Periodo}" Header="Período" FontWeight="Bold"/>
+                    <DataGridTextColumn x:Name="ColumnPrestacao" Width="120" Binding="{Binding Path=Prestacao, StringFormat=C2, ConverterCulture=pt-BR}" Header="Prestação"/>
+                    <DataGridTextColumn x:Name="ColumnJuros" Width="120" Binding="{Binding Path=Juros, StringFormat=C2, ConverterCulture=pt-BR}" Header="Juros"/>
+                    <DataGridTextColumn x:Name="ColumnAmortizacao" Width="120" Binding="{Binding Path=Amortizacao, StringFormat=C2, ConverterCulture=pt-BR}" Header="Amortização"/>
+                    <DataGridTextColumn x:Name="ColumnSaldoDevedor" Width="120" Binding="{Binding Path=SaldoDevedor, StringFormat=C2, ConverterCulture=pt-BR}" Header="Saldo Devedor"/>
                 </DataGrid.Columns>
             </DataGrid>
+            <StackPanel Margin="10,0,0,0" HorizontalAlignment="Left" Orientation="Horizontal">
+                <Grid Width="{Binding ElementName=ColumnPeriodo, Path=ActualWidth}">
+                    <TextBlock Margin="10,0,0,0" Text="Total:"/>
+                </Grid>
+                <Grid Width="{Binding ElementName=ColumnPrestacao, Path=ActualWidth}">
+                    <TextBlock x:Name="txtBlockTotalPrestacao" Margin="10,0,0,0" Text=""/>
+                </Grid>
+                <Grid Width="{Binding ElementName=ColumnJuros, Path=ActualWidth}">
+                    <TextBlock x:Name="txtBlockTotalJuros" Margin="10,0,0,0" Text=""/>
+                </Grid>
+                <Grid Width="{Binding ElementName=ColumnAmortizacao, Path=ActualWidth}">
+                    <TextBlock x:Name="txtBlockTotalAmortizacao" Margin="10,0,0,0" Text=""/>
+                </Grid>
+                <Grid Width="{Binding ElementName=ColumnSaldoDevedor, Path=ActualWidth}">
+                    <TextBlock x:Name="txtBlockTotalSaldoDevedor" Margin="10,0,0,0" Text=""/>
+                </Grid>
+            </StackPanel>
             <Button Content="Exportar" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="74" Margin="5, 5, 0, 0" Name="ExportarTxt" Click="txtExportar_Click" />
         </StackPanel>
     </Grid>

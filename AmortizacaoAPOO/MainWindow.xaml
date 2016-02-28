@@ -13,7 +13,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Margin="89,70,0,0" Name="txtNParcelas" TextChanged="txtNParcelas_TextChanged"/>
 
         <Label Content="Tipo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,96,0,0"/>
-        <Button IsEnabled="False" Content="Gerar tabela" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="249,142,0,0" Name="CreateTxt" Click="CreateTxt_Click" />
+        <Button IsDefault="True" IsEnabled="False" Content="Gerar tabela" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="249,142,0,0" Name="CreateTxt" Click="CreateTxt_Click" />
         <ComboBox Name="cbTipo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="89,100,0,0">
             <ListBoxItem Content="SAC"/>
             <ListBoxItem Content="Price"/>
