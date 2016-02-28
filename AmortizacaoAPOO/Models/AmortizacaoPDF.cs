@@ -99,15 +99,15 @@ namespace AmortizacaoAPOO.Models
             foreach (Parcela p in _source.Parcelas)
             {
                 _table.AddCell(p.Periodo.ToString());
-                _table.AddCell(p.Prestacao.ToString());
-                _table.AddCell(p.Juros.ToString());
-                _table.AddCell(p.Amortizacao.ToString());
-                _table.AddCell(p.SaldoDevedor.ToString());
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.Prestacao));
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.Juros));
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.Amortizacao));
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.SaldoDevedor));
             }
             _table.AddCell("Total");
-            _table.AddCell(_source.TotalPrestacao.ToString());
-            _table.AddCell(_source.TotalJuros.ToString());
-            _table.AddCell(_source.TotalAmortizacao.ToString());
+            _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", _source.TotalPrestacao));
+            _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", _source.TotalJuros));
+            _table.AddCell((String.Format(CultureInfo.CurrentCulture, "{0:C2}", _source.TotalAmortizacao)));
             _table.AddCell("-");
         }
         private void ChangeTableAmericano()
@@ -125,15 +125,15 @@ namespace AmortizacaoAPOO.Models
             foreach (Parcela p in _source.Parcelas)
             {
                 _table.AddCell(p.Periodo.ToString());
-                _table.AddCell(p.Prestacao.ToString());
-                _table.AddCell(p.Juros.ToString());
-                _table.AddCell(p.Amortizacao.ToString());
-                _table.AddCell(p.SaldoDevedor.ToString());
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.Prestacao));
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.Juros));
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.Amortizacao));
+                _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", p.SaldoDevedor));
             }
             _table.AddCell("Total");
-            _table.AddCell(_source.TotalPrestacao.ToString());
-            _table.AddCell(_source.TotalJuros.ToString());
-            _table.AddCell(_source.TotalAmortizacao.ToString());
+            _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", _source.TotalPrestacao));
+            _table.AddCell(String.Format(CultureInfo.CurrentCulture, "{0:C2}", _source.TotalJuros));
+            _table.AddCell((String.Format(CultureInfo.CurrentCulture, "{0:C2}", _source.TotalAmortizacao)));
             _table.AddCell("-");
         }
     }
