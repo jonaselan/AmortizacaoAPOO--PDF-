@@ -35,8 +35,11 @@ namespace AmortizacaoAPOO
         public gridPDF(Models.AmortizacaoPDF pdf)
         {
             InitializeComponent();
+            CollectionViewSource itemCollectionViewSource;
+            itemCollectionViewSource = (CollectionViewSource)(FindResource("ItemCollectionViewSource"));
+            itemCollectionViewSource.Source = pdf.Source.Parcelas;
             _pdf = pdf;
-            dgValues.ItemsSource = pdf.Source.Parcelas;
+            //dgValues.ItemsSource = pdf.Source.Parcelas;
         }
 
         private void txtExportar_Click(object sender, RoutedEventArgs e)
