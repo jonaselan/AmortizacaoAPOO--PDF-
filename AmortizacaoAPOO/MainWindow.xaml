@@ -1,20 +1,20 @@
 ﻿<Window x:Class="AmortizacaoAPOO.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="207.536" Width="236.409"
+        Title="Amortização" Height="210" Width="350"
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
         <Label Content="Montante:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,11,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,14,0,0" Name="txtMontante" />
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Margin="89,14,0,0" Name="txtMontante" LostFocus="txtMontante_LostFocus" TextChanged="txtMontante_TextChanged"/>
         <Label Content="Juros (%):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,39,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,42,0,0" Name="txtJuros"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Margin="89,42,0,0" Name="txtJuros" LostFocus="txtJuros_LostFocus" TextChanged="txtJuros_TextChanged"/>
         <Label Content="Parcelas:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,67,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,70,0,0" Name="txtNParcelas" />
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Margin="89,70,0,0" Name="txtNParcelas" TextChanged="txtNParcelas_TextChanged"/>
 
         <Label Content="Tipo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,96,0,0"/>
-        <Button Content="Gerar tabela" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="135,143,0,0" Name="CreateTxt" Click="CreateTxt_Click" />
-        <ComboBox Name="cbTipo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="89,100,0,0">
+        <Button IsEnabled="False" Content="Gerar tabela" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="249,142,0,0" Name="CreateTxt" Click="CreateTxt_Click" />
+        <ComboBox Name="cbTipo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="89,100,0,0">
             <ListBoxItem Content="SAC"/>
             <ListBoxItem Content="Price"/>
             <ListBoxItem Content="Americano"/>
